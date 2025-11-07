@@ -153,7 +153,7 @@ body {
 .sub-hero {
   background: linear-gradient(135deg, #d47a7a, #f9c9c9);
   color: #fff;
-  text-align: center;
+  text-align: justify;
   padding: 5rem 2rem;
 }
 
@@ -624,5 +624,6 @@ body {
 .document-card .btn:hover {
   background: #005fa3;
 }
+
 
 
