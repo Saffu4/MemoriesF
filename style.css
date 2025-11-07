@@ -33,9 +33,12 @@ body {
 
 .section p {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto; /* mantiene centrado el bloque, agrega espacio abajo */
   font-size: 1.05rem;
+  text-align: justify;       /* Justifica el texto */
+  line-height: 1.6;          /* Mejor legibilidad */
 }
+
 
 /* ====== NAVBAR ====== */
 .navbar {
@@ -645,5 +648,6 @@ body {
   height: auto;
   margin-bottom: 15px;
 }
+
 
 
