@@ -22,7 +22,7 @@ body {
 
 .section {
   padding: 4rem 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .section h2 {
@@ -87,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
 }
 
 .hero h1 {
@@ -166,7 +166,7 @@ body {
 .cta {
   background: linear-gradient(135deg, #d47a7a, #f9c9c9);
   color: #fff;
-  text-align: center;
+  text-align: justify;
   padding: 5rem 2rem;
 }
 
@@ -624,3 +624,4 @@ body {
 .document-card .btn:hover {
   background: #005fa3;
 }
+
