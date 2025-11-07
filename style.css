@@ -54,7 +54,7 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
   flex-shrink: 0;
 }
 
@@ -624,4 +624,5 @@ body {
 .document-card .btn:hover {
   background: #005fa3;
 }
+
 
