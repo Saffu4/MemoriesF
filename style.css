@@ -1,0 +1,626 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ====== UTILIDADES GLOBALES ====== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section h2 {
+  color: #d47a7a;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #d47a7a;
+}
+
+/* ====== HERO PRINCIPAL ====== */
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(212,122,122,0.7), rgba(249,243,239,0.6)),
+              url('https://images.unsplash.com/photo-1532634896-26909d0d4b6a') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+/* ====== BOTONES ====== */
+.btn {
+  background: #fff;
+  color: #d47a7a;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background: #d47a7a;
+  color: #fff;
+  border-color: #d47a7a;
+}
+
+/* ====== SIMBOLO ====== */
+.symbol img {
+  width: 160px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+/* ====== VALORES ====== */
+.value-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f9f3ef;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ====== SUB-HERO ====== */
+.sub-hero {
+  background: linear-gradient(135deg, #d47a7a, #f9c9c9);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.sub-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ====== CTA ====== */
+.cta {
+  background: linear-gradient(135deg, #d47a7a, #f9c9c9);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.cta .btn {
+  background: #fff;
+  color: #d47a7a;
+  margin-top: 1.5rem;
+}
+
+/* ====== GRIDS ====== */
+.programs-grid,
+.stories-grid,
+.donation-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #d47a7a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #b85f5f;
+}
+
+/* ====== FOOTER ====== */
+/* ====== FOOTER AJUSTADO ====== */
+.footer {
+  background: #b85f5f;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 120px;          /* Tamaño controlado */
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;    /* Mantiene la forma redondeada */
+}
+
+.footer p {
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.footer .socials a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.footer .socials a:hover {
+  opacity: 0.7;
+}
+
+
+/* ====== ANIMACIONES ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta, .sub-hero {
+    padding: 3rem 1rem;
+  }
+}
+/* ====== FUNDADORES ====== */
+.fundadores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fundador {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.fundador .cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Parte frontal */
+.fundador .frontal {
+  background: linear-gradient(135deg, rgba(212,122,122,0.7), rgba(225,166,126,0.6));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+}
+
+.fundador .frontal h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fundador .frontal span {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Parte trasera con imagen y texto */
+.fundador .trasera {
+  background: #fff;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #333;
+  padding: 1rem;
+}
+
+.fundador .trasera img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #22506a;
+}
+
+.fundador .trasera p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* El efecto se activa con la clase .activo */
+.fundador.activo .frontal {
+  transform: rotateY(180deg);
+}
+
+.fundador.activo .trasera {
+  transform: rotateY(360deg);
+}
+
+.desde {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #555;
+}
+
+
+/* ====== EQUIPO ====== */
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.integrante {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.integrante .cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Parte frontal */
+.integrante .frontal {
+  background: linear-gradient(135deg, #c2948a, #f3dad8);
+  color: #0d2e3d;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Parte trasera */
+.integrante .trasera {
+  background: #fff;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: #333;
+}
+
+.integrante .trasera img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  border: 2px solid #8ab1c2;
+}
+
+.integrante .trasera p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* Animación con clase activa */
+.integrante.activo .frontal {
+  transform: rotateY(180deg);
+}
+
+.integrante.activo .trasera {
+  transform: rotateY(360deg);
+}
+/* ====== PROGRAMAS ====== */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.program-card {
+  width: 100%;
+  max-width: 300px;
+  height: 260px;
+  position: relative;
+  perspective: 1000px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.program-card .program-front,
+.program-card .program-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2rem;
+  overflow: hidden;
+}
+
+/* Cara frontal: imagen + texto */
+.program-front {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Cara trasera */
+.program-back {
+  background: #ffffff;
+  color: #333;
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Activación con clase .activo (no hover) */
+.program-card.activo .program-front {
+  transform: rotateY(180deg);
+}
+
+.program-card.activo .program-back {
+  transform: rotateY(360deg);
+}
+/* ====== TRANSPARENCIA ====== */
+.transparencia h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.transparencia .intro-text {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #444;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.document-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.document-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.document-card .btn {
+  background: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.document-card .btn:hover {
+  background: #005fa3;
+}
