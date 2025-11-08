@@ -995,7 +995,266 @@ body {
 .contacto-datos strong {
   color: var(--primary-color);
 }
+/* ====== ESTILOS ESPECÍFICOS PARA CONTACTO ====== */
 
+.contacto {
+  padding: 4rem 1rem;
+  background: var(--background-light);
+}
+
+.contacto .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+/* ====== INFORMACIÓN DE CONTACTO ====== */
+.contacto-info {
+  background: var(--text-light);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.contacto-info h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--background-light);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow);
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.info-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-content p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+.contacto-form {
+  background: var(--text-light);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.contacto-form h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--background-light);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: var(--text-light);
+  box-shadow: 0 0 0 3px rgba(212, 122, 122, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-enviar {
+  background: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn-enviar:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ====== MAPA ====== */
+.mapa-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.mapa-section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mapa-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  height: 400px;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ====== HORARIOS DE ATENCIÓN ====== */
+.horarios {
+  background: var(--text-light);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.horarios h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.horario-item:last-child {
+  border-bottom: none;
+}
+
+.horario-dia {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.horario-horas {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* ====== RESPONSIVE PARA CONTACTO ====== */
+@media (max-width: 968px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .contacto-info,
+  .contacto-form {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    padding: 3rem 1rem;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .mapa-container {
+    height: 300px;
+  }
+  
+  .horario-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto-info,
+  .contacto-form {
+    padding: 1.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 0.8rem;
+  }
+  
+  .btn-enviar {
+    padding: 0.8rem 2rem;
+  }
+  
+  .mapa-container {
+    height: 250px;
+  }
+}
 /* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 768px) {
   .navbar .container {
@@ -1203,4 +1462,5 @@ body {
     padding: 2rem 1.5rem;
   }
 }
+
 
