@@ -24,43 +24,54 @@
     </div>
   </header>
 
-<body>
-    <header>
+  <main class="contacto-main">
+    <section class="contacto-hero">
+      <div class="container">
         <h1>Contáctanos</h1>
         <p>Estamos aquí para escucharte y acompañarte</p>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section>
-            <h2>Estamos aquí para escucharte</h2>
+    <section class="contacto-form-section">
+      <div class="container">
+        <div class="form-container">
+          <h2>Estamos aquí para escucharte</h2>
+          
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="mensaje">¿En qué podemos ayudarte?</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
             
-            <form action="#" method="POST">
-                <label for="mensaje">¿En qué podemos ayudarte?</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="telefono">Teléfono (opcional)</label>
-                <input type="tel" id="telefono" name="telefono">
-                
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+            
+            <button type="submit" class="btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        <hr>
-
-        <section>
-            <h3>Ubicación</h3>
-            <p>Saravena, Arauca<br>
-            Colombia</p>
-        </section>
-    </main>
-</body>
-</html>
+    <section class="ubicacion-section">
+      <div class="container">
+        <h3>Ubicación</h3>
+        <p>Saravena, Arauca<br>
+        Colombia</p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -77,4 +88,3 @@
   </footer>
 </body>
 </html>
-
