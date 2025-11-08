@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programas | Fundación Memories</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
   <!-- ====== NAVBAR ====== -->
   <header class="navbar">
     <div class="container">
-      <img src="logo.png" alt="Logo Fundación Memories" class="logo">
+      <img src="logo.jpg" alt="Logo Fundación Memories" class="logo">
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="programas.html" class="active">Programas</a></li>
           <li><a href="historias.html">Historias</a></li>
-          <li><a href="donar.html">Transparencia</a></li>
+          <li><a href="transparencia.html">Transparencia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -27,62 +28,181 @@
 
   <!-- ====== HERO DE SECCIÓN ====== -->
   <section class="sub-hero fade-in">
-    <h1>Nuestros Programas</h1>
-    <p>Acompañamos procesos de aprendizaje, bienestar emocional y fortalecimiento social.</p>
+    <div class="container">
+     </div>
+  </section>
+
+  <!-- ====== INTRODUCCIÓN A PROGRAMAS ====== -->
+  <section class="section fade-up">
+    <div class="container">
+      <div class="section-header">
+        <h2>Transformando Vidas a Través de la Educación y la Salud Mental</h2>
+        <p>Cada programa está diseñado para abordar necesidades específicas de nuestra comunidad, combinando tecnología, educación y bienestar emocional.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORÍAS DE PROGRAMAS ====== -->
+  <section class="section fade-up" style="background: var(--background-light);">
+    <div class="container">
+      <div class="categorias-programas">
+        <div class="categoria-item active" data-categoria="salud-mental">
+          <div class="categoria-icon">💙</div>
+          <h3>Salud Mental</h3>
+        </div>
+        <div class="categoria-item" data-categoria="educacion-tic">
+          <div class="categoria-icon">💻</div>
+          <h3>Educación TIC</h3>
+        </div>
+        <div class="categoria-item" data-categoria="desarrollo-comunitario">
+          <div class="categoria-icon">👥</div>
+          <h3>Desarrollo Comunitario</h3>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ====== PROGRAMAS ====== -->
   <section class="section fade-up">
     <div class="container">
       <div class="programs-grid">
-
         <!-- CONSULTAS PSICOLÓGICAS -->
-        <div class="program-card">
-          <div class="program-front" style="background-image: url('https://images.unsplash.com/photo-1554774853-aae0a22c8aa4');">
+        <div class="program-card" data-categorias="salud-mental">
+          <div class="program-front" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+            <div class="program-badge">Salud Mental</div>
             <h3>Consultas Psicológicas</h3>
+            <div class="program-icon">💬</div>
           </div>
           <div class="program-back">
+            <h3>Consultas Psicológicas</h3>
             <p>Espacio seguro y confidencial para que las personas expresen, comprendan y gestionen sus emociones.</p>
+            <div class="program-details">
+              <div class="detail-item">
+                <span class="detail-label">👥 Beneficiarios:</span>
+                <span>Niños, jóvenes y adultos</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">⏱️ Duración:</span>
+                <span>Sesiones personalizadas</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">🎯 Enfoque:</span>
+                <span>Salud mental individual</span>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-program">Más Información</a>
           </div>
         </div>
 
         <!-- NIÑAS TIC -->
-        <div class="program-card">
-          <div class="program-front" style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c');">
+        <div class="program-card" data-categorias="educacion-tic">
+          <div class="program-front" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+            <div class="program-badge">Educación TIC</div>
             <h3>Niñas TIC</h3>
+            <div class="program-icon">👧</div>
           </div>
           <div class="program-back">
+            <h3>Niñas TIC</h3>
             <p>Un espacio para crear, jugar y aprender. Las niñas fortalecen su pensamiento lógico y su expresión emocional.</p>
+            <div class="program-details">
+              <div class="detail-item">
+                <span class="detail-label">👥 Beneficiarios:</span>
+                <span>Niñas 8-15 años</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">⏱️ Duración:</span>
+                <span>Talleres semanales</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">🎯 Enfoque:</span>
+                <span>Programación creativa</span>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-program">Más Información</a>
           </div>
         </div>
 
         <!-- ALFABETIZADORES TIC -->
-        <div class="program-card">
-          <div class="program-front" style="background-image: url('https://images.unsplash.com/photo-1603570417039-3c84a56c16d8');">
+        <div class="program-card" data-categorias="educacion-tic desarrollo-comunitario">
+          <div class="program-front" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1603570417039-3c84a56c16d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+            <div class="program-badge">Voluntariado</div>
             <h3>Alfabetizadores TIC</h3>
+            <div class="program-icon">🎓</div>
           </div>
           <div class="program-back">
+            <h3>Alfabetizadores TIC</h3>
             <p>Estudiantes que realizan sus horas sociales, desarrollando habilidades tecnológicas y socioemocionales al servicio de la comunidad.</p>
+            <div class="program-details">
+              <div class="detail-item">
+                <span class="detail-label">👥 Beneficiarios:</span>
+                <span>Estudiantes y comunidad</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">⏱️ Duración:</span>
+                <span>Proyectos semestrales</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">🎯 Enfoque:</span>
+                <span>Servicio comunitario</span>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-program">Más Información</a>
           </div>
         </div>
 
         <!-- MUJERES TIC -->
-        <div class="program-card">
-          <div class="program-front" style="background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1a9');">
+        <div class="program-card" data-categorias="educacion-tic desarrollo-comunitario">
+          <div class="program-front" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+            <div class="program-badge">Empoderamiento</div>
             <h3>Mujeres TIC</h3>
+            <div class="program-icon">👩</div>
           </div>
           <div class="program-back">
+            <h3>Mujeres TIC</h3>
             <p>Un círculo de empatía y tecnología que promueve la autonomía, la escucha y el reconocimiento emocional.</p>
+            <div class="program-details">
+              <div class="detail-item">
+                <span class="detail-label">👥 Beneficiarios:</span>
+                <span>Mujeres adultas</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">⏱️ Duración:</span>
+                <span>Encuentros quincenales</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">🎯 Enfoque:</span>
+                <span>Liderazgo digital</span>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-program">Más Información</a>
           </div>
         </div>
 
         <!-- PROFESORAS TIC -->
-        <div class="program-card">
-          <div class="program-front" style="background-image: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238');">
+        <div class="program-card" data-categorias="educacion-tic">
+          <div class="program-front" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+            <div class="program-badge">Capacitación</div>
             <h3>Profesoras TIC</h3>
+            <div class="program-icon">👩‍🏫</div>
           </div>
           <div class="program-back">
+            <h3>Profesoras TIC</h3>
             <p>Acompañamos a las docentes en el desarrollo de sus habilidades tecnológicas y emocionales para seguir inspirando desde la educación.</p>
+            <div class="program-details">
+              <div class="detail-item">
+                <span class="detail-label">👥 Beneficiarios:</span>
+                <span>Docentes mujeres</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">⏱️ Duración:</span>
+                <span>Talleres mensuales</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">🎯 Enfoque:</span>
+                <span>Innovación educativa</span>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn btn-program">Más Información</a>
           </div>
         </div>
 
@@ -90,20 +210,57 @@
     </div>
   </section>
 
+  <!-- ====== CTA FINAL ====== -->
+  <section class="cta fade-in">
+    <div class="container">
+      <h2>¿Te interesa participar en nuestros programas?</h2>
+      <p>Contáctanos para obtener más información sobre cómo puedes ser parte de esta transformación.</p>
+      <a href="contacto.html" class="btn">Contáctanos</a>
+    </div>
+  </section>
+
   <!-- ====== FOOTER ====== -->
- <footer class="footer">
-    <div class="container footer-flex">
-      <img src="logo.jpg" alt="Logo Fundación Memories" class="footer-logo">
-      <p>Fundación Memories – Espacio para Crear, Escuchar y Sentir.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <img src="logo.jpg" alt="Logo Fundación Memories" class="footer-logo">
+        <p>Fundación Memories – Acompañar, crear y sentir desde el corazón.</p>
+      </div>
       <div class="socials">
-        <a href="https://web.facebook.com/profile.php?id=100089660971952&_rdc=1&_rdr#">Facebook</a>
-        <a href="https://www.instagram.com/memories.psi/">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Filtrado por categorías
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoriaItems = document.querySelectorAll('.categoria-item');
+      const programCards = document.querySelectorAll('.program-card');
+      
+      categoriaItems.forEach(item => {
+        item.addEventListener('click', function() {
+          // Remover clase active de todos los items
+          categoriaItems.forEach(i => i.classList.remove('active'));
+          // Agregar clase active al item clickeado
+          this.classList.add('active');
+          
+          const categoria = this.getAttribute('data-categoria');
+          
+          // Mostrar/ocultar programas según categoría
+          programCards.forEach(card => {
+            const categorias = card.getAttribute('data-categorias').split(' ');
+            if (categoria === 'todos' || categorias.includes(categoria)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
